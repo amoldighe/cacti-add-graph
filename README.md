@@ -22,9 +22,13 @@ I am using graph templete id - 40, 41, 42 (for cpu, memoy, load average) in my s
 
 Please note, I am using specific parameters & their values in my script:
 > -- --snmp-query-id=1 
+>
 > -- --snmp-query-type-id=13 
+>
 > -- --snmp-field=ifIP 
+>
 > -- --snmp-value=192.168.4.171 
+>
 > -- --graph-template-id=2 
 
 Below commands will help list the required parameter values.
