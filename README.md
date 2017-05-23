@@ -1,4 +1,5 @@
 **cacti-cpu-mem-graph.sh** is a shell script for addition of cacti graphs for cpu, memory, load average of multiple servers.
+
 **cacti-interface-graph.sh** is a shell script for addition of cacti graphs for interface of multiple servers.
 
 **Usage :**
@@ -44,6 +45,10 @@ List the snmp field type for interface graphing
 List all the interfaces with IP
 
 > php -q /usr/share/cacti/cli/add_graphs.php --host-id=47 --snmp-field=ifIP --list-snmp-values 
+
+List graph template  
+
+> php -q /usr/share/cacti/cli/add_graphs.php --list-graph-templates
 
 
 
