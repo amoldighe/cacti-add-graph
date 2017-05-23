@@ -8,11 +8,11 @@
 
 Please note the host-id-list-file needs to be generated using the below command, which will awk only the ids' for the host to a file.  
 
-> sudo php -q /usr/share/cacti/cli/add_graphs.php --list-hosts | awk '{print $1}' > host-id-list-file
+> php -q /usr/share/cacti/cli/add_graphs.php --list-hosts | awk '{print $1}' > host-id-list-file
 
 I am using graph templete id - 40, 41, 42 (for cpu, memoy, load average) in my script. You can list graph template using the following command 
 
-> sudo php -q /usr/share/cacti/cli/add_graphs.php --list-graph-templates
+> php -q /usr/share/cacti/cli/add_graphs.php --list-graph-templates
 
 
 * **Addition of interface graphs**
@@ -30,18 +30,15 @@ Below commands will help list the required parameter values.
 
 List the snmp queries to be used while adding graphs for interface 
 
-> sudo php -q /usr/share/cacti/cli/add_graphs.php --list-snmp-queries
+> php -q /usr/share/cacti/cli/add_graphs.php --list-snmp-queries
 
 List the snmp field type for interface graphing
 
-> (jpe2)amold@consul-03:~$ sudo php -q
-> /usr/share/cacti/cli/add_graphs.php --host-id=47 --list-snmp-fields
+> php -q /usr/share/cacti/cli/add_graphs.php --host-id=47 --list-snmp-fields
 
 List all the interfaces with IP
 
-> (jpe2)amold@consul-03:~$ sudo php -q
-> /usr/share/cacti/cli/add_graphs.php --host-id=47 --snmp-field=ifIP
-> --list-snmp-values 
+> php -q /usr/share/cacti/cli/add_graphs.php --host-id=47 --snmp-field=ifIP --list-snmp-values 
 
 
 
