@@ -1,4 +1,5 @@
-**cacti-cpu-mem-graph.sh** is a shell script for addition cacti graphs for cpu, memory, load average for multiple servers.
+**cacti-cpu-mem-graph.sh** is a shell script for addition of cacti graphs for cpu, memory, load average of multiple servers.
+**cacti-interface-graph.sh** is a shell script for addition of cacti graphs for interface of multiple servers.
 
 **Usage :**
 
